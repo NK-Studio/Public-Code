@@ -89,10 +89,4 @@ Public-Code/
 - **`AutoBindEditor.cs` / `RequiredDrawer.cs`**:
   - 컴포넌트 자동 바인딩 및 인스펙터 필수 참조 검증 커스텀 에디터 확장.
 
----
 
-## ✨ Architectural Highlights
-1. **Low Coupling & High Cohesion**: `VContainer`와 Interface 기반 설계로 각 시스템 간의 독립성을 보장합니다.
-2. **Data-Driven Balance**: 하드코딩을 배제하고 `ScriptableObject` 중심의 데이터 유연성을 확보했습니다.
-3. **Robust Event System**: Gameplay 및 UI 레이어가 C# Event / Interface를 통해 소통하여 확장 및 유지보수가 용이합니다.
-4. **Tooling Support**: 기획자/디자이너 작업을 돕기 위한 레벨 디자인 및 인스펙터 생산성 툴을 포함합니다.
