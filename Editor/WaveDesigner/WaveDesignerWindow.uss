@@ -1,0 +1,211 @@
+.wave-designer {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.wave-designer__toolbar {
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.18);
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.35);
+}
+
+.wave-designer__toolbar-field {
+    margin-right: 20px;
+    min-width: 190px;
+}
+
+.wave-designer__body {
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+/* ===== 패널 공통: 배경/테두리로 3개 영역을 뚜렷하게 분리 ===== */
+.wave-designer__panel {
+    flex-direction: column;
+    margin-right: 10px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.12);
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+}
+
+.wave-designer__panel-header {
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(92, 170, 255, 0.4);
+}
+
+.wave-designer__panel-title {
+    font-size: 12px;
+    -unity-font-style: bold;
+    color: rgb(180, 210, 255);
+    letter-spacing: 1px;
+}
+
+.wave-designer__panel-subtitle {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 2px;
+    white-space: normal;
+}
+
+/* ===== Step 패널 ===== */
+.wave-designer__step-list {
+    width: 170px;
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+.wave-designer__step-item {
+    padding: 4px 6px;
+    margin: 2px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.wave-designer__step-item--selected {
+    border-color: rgb(92, 170, 255);
+    background-color: rgba(92, 170, 255, 0.2);
+}
+
+.wave-designer__step-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+/* ===== Grid 패널 ===== */
+.wave-designer__grid-panel {
+    flex-grow: 1;
+}
+
+.wave-designer__grid-scroll {
+    margin-top: 6px;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.35);
+    align-self: flex-start;
+}
+
+.wave-designer__grid {
+    flex-direction: column;
+}
+
+.wave-designer__grid-row {
+    flex-direction: row;
+}
+
+.wave-designer__cell {
+    width: 34px;
+    height: 34px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.04);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.wave-designer__cell:hover {
+    border-color: rgb(92, 170, 255);
+}
+
+.wave-designer__cell--filled {
+    background-color: rgba(92, 170, 255, 0.18);
+}
+
+.wave-designer__cell--ghost {
+    opacity: 0.35;
+}
+
+.wave-designer__overlay-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.wave-designer__placement-icon {
+    position: absolute;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.wave-designer__hover-preview {
+    position: absolute;
+    background-color: rgba(92, 170, 255, 0.35);
+    border-width: 2px;
+    border-color: rgb(92, 170, 255);
+}
+
+.wave-designer__hover-preview--invalid {
+    background-color: rgba(255, 90, 90, 0.35);
+    border-color: rgb(255, 90, 90);
+}
+
+.wave-designer__rotation-row {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.wave-designer__rotate-button {
+    margin-right: 8px;
+}
+
+.wave-designer__rotation-label {
+    -unity-font-style: bold;
+    color: rgb(180, 210, 255);
+}
+
+/* ===== Palette 패널 ===== */
+.wave-designer__palette {
+    width: 230px;
+    flex-grow: 1;
+    margin-top: 6px;
+}
+
+.wave-designer__palette-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 3px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 3px;
+}
+
+.wave-designer__palette-item--selected {
+    border-color: rgb(92, 170, 255);
+    background-color: rgba(92, 170, 255, 0.18);
+}
+
+.wave-designer__palette-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.wave-designer__palette-info {
+    flex-direction: column;
+}
+
+.wave-designer__palette-name {
+    -unity-font-style: bold;
+}
+
+.wave-designer__palette-hp {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.55);
+}

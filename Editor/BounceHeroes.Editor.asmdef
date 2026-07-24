@@ -1,0 +1,19 @@
+{
+    "name": "BounceHeroes.Editor",
+    "rootNamespace": "BounceHeroes",
+    "references": [
+        "BounceHeroes.Core",
+        "BounceHeroes.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

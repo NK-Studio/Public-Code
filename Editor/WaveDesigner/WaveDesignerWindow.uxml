@@ -1,0 +1,56 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <Style src="WaveDesignerWindow.uss" />
+
+    <ui:VisualElement name="wave-designer" class="wave-designer">
+
+        <ui:VisualElement name="wave-designer__toolbar" class="wave-designer__toolbar">
+            <uie:ObjectField name="wave-designer__wave-table-field" label="Wave Table" class="wave-designer__toolbar-field" />
+            <ui:IntegerField name="wave-designer__wave-index-field" label="Wave (1-base)" value="1" class="wave-designer__toolbar-field" />
+            <ui:IntegerField name="wave-designer__kill-requirement-field" label="Kill Requirement" value="3" class="wave-designer__toolbar-field" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="wave-designer__body" class="wave-designer__body">
+
+            <ui:VisualElement name="wave-designer__step-panel" class="wave-designer__panel">
+                <ui:VisualElement class="wave-designer__panel-header">
+                    <ui:Label text="STEPS" class="wave-designer__panel-title" />
+                    <ui:Label text="이 웨이브의 스폰 순서" class="wave-designer__panel-subtitle" />
+                </ui:VisualElement>
+                <ui:ScrollView name="wave-designer__step-list" class="wave-designer__step-list" />
+                <ui:VisualElement class="wave-designer__step-buttons">
+                    <ui:Button name="wave-designer__add-step" text="+ Add" />
+                    <ui:Button name="wave-designer__duplicate-step" text="Dup" />
+                    <ui:Button name="wave-designer__remove-step" text="Remove" />
+                    <ui:Button name="wave-designer__move-up" text="▲" />
+                    <ui:Button name="wave-designer__move-down" text="▼" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="wave-designer__grid-panel" class="wave-designer__panel wave-designer__grid-panel">
+                <ui:VisualElement class="wave-designer__panel-header">
+                    <ui:Label text="GRID (9 x 13)" class="wave-designer__panel-title" />
+                    <ui:Label text="드래그: 연속 배치/제거 · 같은 칸 다시 지나가면 무시" class="wave-designer__panel-subtitle" />
+                </ui:VisualElement>
+                <ui:Toggle name="wave-designer__accumulate-toggle" label="이전 스텝 누적 미리보기" />
+                <ui:VisualElement name="wave-designer__grid-scroll" class="wave-designer__grid-scroll">
+                    <ui:VisualElement name="wave-designer__grid" class="wave-designer__grid" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="wave-designer__palette-panel" class="wave-designer__panel">
+                <ui:VisualElement class="wave-designer__panel-header">
+                    <ui:Label text="PALETTE" class="wave-designer__panel-title" />
+                    <ui:Label text="브러시로 사용할 몬스터 선택" class="wave-designer__panel-subtitle" />
+                </ui:VisualElement>
+                <ui:IntegerField name="wave-designer__hp-override-field" label="HP Override" value="0" />
+                <ui:VisualElement name="wave-designer__rotation-row" class="wave-designer__rotation-row">
+                    <ui:Button name="wave-designer__rotate-brush" text="⟳ 회전" class="wave-designer__rotate-button" />
+                    <ui:Label name="wave-designer__rotation-label" text="0°" class="wave-designer__rotation-label" />
+                </ui:VisualElement>
+                <ui:ScrollView name="wave-designer__palette" class="wave-designer__palette" />
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>
