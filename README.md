@@ -1,6 +1,6 @@
-# 🎮 Bounce Heroes - Code Architecture & Project Structure
+# 🎮 Unity Code Architecture & Project Structure
 
-본 저장소는 **Bounce Heroes** 유니티 프로젝트의 핵심 스크립트 및 아키텍처 코드를 담고 있는 포트폴리오 저장소입니다.  
+본 저장소는 유니티 프로젝트의 핵심 스크립트 및 아키텍처 코드를 담고 있는 포트폴리오 저장소입니다.  
 VContainer 기반의 의존성 주입(DI), 인터페이스 기반 설계, 데이터 중심(ScriptableObject) 구조, 그리고 UI Toolkit 기반의 커스텀 툴 개발을 포함하고 있습니다.
 
 ---
